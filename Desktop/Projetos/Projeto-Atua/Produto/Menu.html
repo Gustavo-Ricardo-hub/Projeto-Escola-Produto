@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Menu Produto</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f4f4f8;
+    }
+
+    .top-bar {
+      background-color: #ffffff;
+      padding: 15px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      border-radius: 0 0 12px 12px;
+    }
+
+    .titulo {
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #5b21b6;
+      margin-bottom: 15px;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #4f46e5;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 10px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    .nav a:hover {
+      background-color: #e0e7ff;
+      color: #3730a3;
+    }
+
+    .nav a.active {
+      background-color: #a78bfa;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="titulo">Produto</div>
+    <div class="nav">
+      <a href="#" class="active">Principal</a>
+      <a href="cadastrar.php">Cadastrar</a>
+      <a href="excluir.php">Excluir</a>
+      <a href="consultar_pesq.php">Pesquisar</a>
+      <a href="listar.php">Listar</a>
+      <a href="consultar_alt.php">Alterar</a>
+    </div>
+  </div>
+
+</body>
+</html>
