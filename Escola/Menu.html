@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Sistema Escola</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      height: 100vh;
+      background-color: #ebececff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      width: 90%;
+      max-width: 1200px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    .menu {
+      width: 400px;
+      background-color: #f0f4f8;
+      padding: 40px 30px;
+    }
+
+    h1 {
+      font-size: 18px;
+      color: #555;
+      letter-spacing: 2px;
+    }
+
+    h2 {
+      font-size: 26px;
+      margin-bottom: 30px;
+      color: #1d1d1d;
+    }
+
+    h3 {
+      font-size: 18px;
+      margin: 20px 0 10px;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .button-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-bottom: 15px;
+    }
+
+    .button-group button {
+      background-color: #a78bfa;
+      border: none;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 500;
+    }
+
+    .button-group button:hover {
+      background-color: #7c3aed;
+    }
+
+    .sair {
+      margin-top: 30px;
+      background-color: #d6d3d1;
+      padding: 6px 20px;
+      border-radius: 12px;
+      border: none;
+      color: #333;
+      cursor: pointer;
+    }
+
+    .imagem {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+    }
+
+    .imagem img {
+      max-width: 90%;
+      height: auto;
+      opacity: 0;
+      transform: translateX(100px);
+      animation: deslizar 1s ease-out forwards; /* fowards deixa do jeito que fique no estado final da animação*/
+    }
+
+    @keyframes deslizar {
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    a{
+      text-decoration: none;
+      color: inherit;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="menu">
+      <h1>SISTEMA ESCOLAR</h1>
+      <h2>Etec da Zona Leste</h2>
+
+      <h3>Alunos</h3>
+      <div class="button-group">
+        <button><a href="listarAluno.php">Listar</a></button>
+        <button><a href="cadastrarAluno.php">Incluir</a></button>
+        <button><a href="consultarAluno_alt.php">Alterar</a></button>
+        <button><a href="excluirAluno.php">Excluir</a></button>
+        <button><a href="consultarAluno.php">Pesquisar</a></button>
+      </div>
+
+      <h3>Disciplinas</h3>
+      <div class="button-group">
+        <button><a href="listarDisciplinas.php">Listar</a></button>
+        <button><a href="cadastrarDisciplinas.php">Incluir</a></button>
+        <button><a href="consultaDisciplina_alt.php">Alterar</a></button>
+        <button><a href="excluirDisciplinas.php">Excluir</a></button>
+        <button><a href="consultarDisciplinas.php">Pesquisar</a></button>
+      </div>
+
+      <h3>Cursos</h3>
+      <div class="button-group">
+        <button><a href="listarCursos.php">Listar</a></button>
+        <button><a href="cadastrarCurso.php">Incluir</a></button>
+        <button><a href="consultarCurso_alt.php">Alterar</a></button>
+        <button><a href="excluirCurso.php">Excluir</a></button>
+        <button><a href="consultarCurso.php">Pesquisar</a></button>
+      </div>
+
+      <button class="sair">Sair</button>
+    </div>
+
+    <div class="imagem">
+      <img src="img/estudantes.png" alt="Estudante com livros">
+    </div>
+  </div>
+
+</body>
+</html>
